@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8" />
+    <title>title</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <h1>My Library</h1>
+        <button id="newBookBtn">New Book</button>
+    <dialog id="bookDialog">
+        <form id="bookForm" method="dialog">
+            <h2>Add a New Book</h2>
+            <label>
+                Title:<br>
+                <input type="text" name="title" required>
+            </label><br><br>
+            <label>
+                Author:<br>
+                <input type="text" name="author" required>
+            </label><br><br>
+            <label>
+                Pages:<br>
+                <input type="number" name="pages" min="1" required>
+            </label><br><br>
+            <label>
+                <input type="checkbox" name="read">
+                Read
+            </label><br><br>
+            <button type="submit">Add Book</button>
+            <button type="button" id="closeDialogBtn">Cancel</button>
+        </form>
+    </dialog>
+    <div id="library"></div>
+    <script src="code.js"></script>
+</body>
+
+</html>
